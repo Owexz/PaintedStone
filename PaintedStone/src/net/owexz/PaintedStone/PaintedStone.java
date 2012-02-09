@@ -35,7 +35,7 @@ public class PaintedStone extends JavaPlugin
         BlackStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5578079.png", 64, 16, 16);
         BlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/1864681.png", 64, 16, 16);
         BrownStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3482710.png", 64, 16, 16);
-        CyanStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3464522.png", 64, 16, 16);
+        CyanStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4248659.png", 64, 16, 16);
         GreenStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3464522.png", 64, 16, 16);
         LightBlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6757814.png", 64, 16, 16);
         LimeStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7239441.png", 64, 16, 16);
