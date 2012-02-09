@@ -9,6 +9,6 @@ public class OrangeStoneBlock extends GenericCubeCustomBlock
  
     public OrangeStoneBlock(Plugin plugin)
     {
-        super(plugin, "OrangeStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9140909.png", 16));
+        super(plugin, "OrangeStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7151376.png", 16));
     }
 }

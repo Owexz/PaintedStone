@@ -9,6 +9,6 @@ public class RedStoneBlock extends GenericCubeCustomBlock
  
     public RedStoneBlock(Plugin plugin)
     {
-        super(plugin, "RedStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3319998.png", 16));
+        super(plugin, "RedStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6750918.png", 16));
     }
 }

@@ -9,6 +9,6 @@ public class GreenStoneBlock extends GenericCubeCustomBlock
  
     public GreenStoneBlock(Plugin plugin)
     {
-        super(plugin, "GreenStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3283907.png", 16));
+        super(plugin, "GreenStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3464522.png", 16));
     }
 }

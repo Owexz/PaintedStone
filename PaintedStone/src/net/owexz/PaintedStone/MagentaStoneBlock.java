@@ -9,6 +9,6 @@ public class MagentaStoneBlock extends GenericCubeCustomBlock
  
     public MagentaStoneBlock(Plugin plugin)
     {
-        super(plugin, "MagentaStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6865203.png", 16));
+        super(plugin, "MagentaStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7694621.png", 16));
     }
 }

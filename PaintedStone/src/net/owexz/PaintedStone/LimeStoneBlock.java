@@ -9,6 +9,6 @@ public class LimeStoneBlock extends GenericCubeCustomBlock
  
     public LimeStoneBlock(Plugin plugin)
     {
-        super(plugin, "LimeStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7899726.png", 16));
+        super(plugin, "LimeStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7239441.png", 16));
     }
 }

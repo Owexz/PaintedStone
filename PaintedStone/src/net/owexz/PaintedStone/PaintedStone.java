@@ -32,20 +32,20 @@ public class PaintedStone extends JavaPlugin
     public PaintedStone()
     {
         log = Logger.getLogger("Minecraft");
-        BlackStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4483553.png", 64, 16, 16);
-        BlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9924474.png", 64, 16, 16);
-        BrownStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3431360.png", 64, 16, 16);
-        CyanStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5620139.png", 64, 16, 16);
-        GreenStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3283907.png", 64, 16, 16);
-        LightBlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3731222.png", 64, 16, 16);
-        LimeStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7899726.png", 64, 16, 16);
-        MagentaStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6865203.png", 64, 16, 16);
-        OrangeStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9140909.png", 64, 16, 16);
-        PinkStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7811001.png", 64, 16, 16);
-        PurpleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/2903760.png", 64, 16, 16);
-        RedStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3319998.png", 64, 16, 16);
-        WhiteStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9400493.png", 64, 16, 16);
-        YellowStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4786051.png", 64, 16, 16);
+        BlackStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5578079.png", 64, 16, 16);
+        BlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/1864681.png", 64, 16, 16);
+        BrownStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3482710.png", 64, 16, 16);
+        CyanStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3464522.png", 64, 16, 16);
+        GreenStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3464522.png", 64, 16, 16);
+        LightBlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6757814.png", 64, 16, 16);
+        LimeStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7239441.png", 64, 16, 16);
+        MagentaStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7694621.png", 64, 16, 16);
+        OrangeStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7151376.png", 64, 16, 16);
+        PinkStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7831939.png", 64, 16, 16);
+        PurpleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9137035.png", 64, 16, 16);
+        RedStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6750918.png", 64, 16, 16);
+        WhiteStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6338613.png", 64, 16, 16);
+        YellowStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3983204.png", 64, 16, 16);
         
     }
  
