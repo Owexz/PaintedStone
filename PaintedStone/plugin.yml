@@ -1,0 +1,6 @@
+name: PaintedStone
+version:  Beta 2
+author: Owexz
+description: Coloured Stone!
+main: net.owexz.PaintedStone.PaintedStone
+depend: [Spout]
