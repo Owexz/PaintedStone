@@ -6,7 +6,9 @@ import org.getspout.spoutapi.material.block.GenericCubeCustomBlock;
  
 public class GreenCobbleStoneBlock extends GenericCubeCustomBlock
 {
- 
+    public int getBlockId() {
+    	return 4;
+        }
     public GreenCobbleStoneBlock(Plugin plugin)
     {
         super(plugin, "GreenCobbleStone Block", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9064429.png", 16));
