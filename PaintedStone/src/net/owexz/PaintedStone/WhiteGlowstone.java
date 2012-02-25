@@ -7,7 +7,7 @@ import org.getspout.spoutapi.material.block.GenericCubeCustomBlock;
 public class WhiteGlowstone extends GenericCubeCustomBlock
 {
     public int getBlockId() {
-    	return 4;
+    	return 89;
         }
     public WhiteGlowstone(Plugin plugin)
     {
