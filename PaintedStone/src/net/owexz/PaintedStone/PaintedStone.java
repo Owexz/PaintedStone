@@ -18,6 +18,49 @@ package net.owexz.PaintedStone;
  
 import java.util.logging.Logger;
 
+import net.owexz.PaintedStone.Cobblestone.BlackCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.BlueCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.BrownCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.CyanCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.GreenCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.LightBlueCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.LimeCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.MagentaCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.OrangeCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.PinkCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.PurpleCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.RedCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.WhiteCobbleStoneBlock;
+import net.owexz.PaintedStone.Cobblestone.YellowCobbleStoneBlock;
+import net.owexz.PaintedStone.Glowstone.BlackGlowstone;
+import net.owexz.PaintedStone.Glowstone.BlueGlowstone;
+import net.owexz.PaintedStone.Glowstone.BrownGlowstone;
+import net.owexz.PaintedStone.Glowstone.CyanGlowstone;
+import net.owexz.PaintedStone.Glowstone.GreenGlowstone;
+import net.owexz.PaintedStone.Glowstone.LightBlueGlowstone;
+import net.owexz.PaintedStone.Glowstone.LimeGlowstone;
+import net.owexz.PaintedStone.Glowstone.MagentaGlowstone;
+import net.owexz.PaintedStone.Glowstone.OrangeGlowstone;
+import net.owexz.PaintedStone.Glowstone.PinkGlowstone;
+import net.owexz.PaintedStone.Glowstone.PurpleGlowstone;
+import net.owexz.PaintedStone.Glowstone.RedGlowstone;
+import net.owexz.PaintedStone.Glowstone.WhiteGlowstone;
+import net.owexz.PaintedStone.Glowstone.YellowGlowstone;
+import net.owexz.PaintedStone.Stone.BlackStoneBlock;
+import net.owexz.PaintedStone.Stone.BlueStoneBlock;
+import net.owexz.PaintedStone.Stone.BrownStoneBlock;
+import net.owexz.PaintedStone.Stone.CyanStoneBlock;
+import net.owexz.PaintedStone.Stone.GreenStoneBlock;
+import net.owexz.PaintedStone.Stone.LightBlueStoneBlock;
+import net.owexz.PaintedStone.Stone.LimeStoneBlock;
+import net.owexz.PaintedStone.Stone.MagentaStoneBlock;
+import net.owexz.PaintedStone.Stone.OrangeStoneBlock;
+import net.owexz.PaintedStone.Stone.PinkStoneBlock;
+import net.owexz.PaintedStone.Stone.PurpleStoneBlock;
+import net.owexz.PaintedStone.Stone.RedStoneBlock;
+import net.owexz.PaintedStone.Stone.WhiteStoneBlock;
+import net.owexz.PaintedStone.Stone.YellowStoneBlock;
+
 import org.bukkit.plugin.java.JavaPlugin;
 import org.getspout.spoutapi.SpoutManager;
 import org.getspout.spoutapi.block.design.Texture;
@@ -32,6 +75,8 @@ public class PaintedStone extends JavaPlugin
     public PaintedStone()
     {
         log = Logger.getLogger("Minecraft");
+        /* Stone Textures
+         */
         BlackStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5578079.png", 64, 16, 16);
         BlueStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/1864681.png", 64, 16, 16);
         BrownStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9251445.png", 64, 16, 16);
@@ -46,6 +91,8 @@ public class PaintedStone extends JavaPlugin
         RedStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6750918.png", 64, 16, 16);
         WhiteStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6338613.png", 64, 16, 16);
         YellowStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3983204.png", 64, 16, 16);
+        /* Cobblestone Textures
+         */
         BlackCobbleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7326876.png", 64, 16, 16);
         BlueCobbleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/9661142.png", 64, 16, 16);
         BrownCobbleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7944579.png", 64, 16, 16);
@@ -60,6 +107,8 @@ public class PaintedStone extends JavaPlugin
         RedCobbleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6802317.png", 64, 16, 16);
         WhiteCobbleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/8102036.png", 64, 16, 16);
         YellowCobbleStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7461858.png", 64, 16, 16);
+        /* Glowstone Textures
+         */
         BlackGlowstoneTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/1848050.png", 64, 16, 16);
         BlueGlowstoneTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/1566440.png", 64, 16, 16);
         BrownGlowstoneTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7601325.png", 64, 16, 16);
@@ -74,6 +123,23 @@ public class PaintedStone extends JavaPlugin
         RedGlowstoneTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5395357.png", 64, 16, 16);
         WhiteGlowstoneTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4709953.png", 64, 16, 16);
         YellowGlowstoneTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6592614.png", 64, 16, 16);
+        /* Wood Textures
+         */
+        BlackWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4815927.png", 64, 16, 16);
+        BlueWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7995109.png", 64, 16, 16);
+        BrownWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4175146.png", 64, 16, 16);
+        CyanWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7882469.png", 64, 16, 16);
+        GreenWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6200388.png", 64, 16, 16);
+        LightBlueWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6712322.png", 64, 16, 16);
+        LimeWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/260873.png", 64, 16, 16);
+        MagentaWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/2418595.png", 64, 16, 16);
+        OrangeWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/591872.png", 64, 16, 16);
+        PinkWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3670943.png", 64, 16, 16);
+        PurpleWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/8751995.png", 64, 16, 16);
+        RedWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/2223525.png", 64, 16, 16);
+        WhiteWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6540375.png", 64, 16, 16);
+        YellowWoodTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6907025.png", 64, 16, 16);
+        
     }
  
     public void onEnable()
@@ -120,6 +186,20 @@ public class PaintedStone extends JavaPlugin
     	RedGlowstone = new RedGlowstone(this);
     	WhiteGlowstone = new WhiteGlowstone(this);
     	YellowGlowstone = new YellowGlowstone(this);
+    	BlackWood = new net.owexz.PaintedStone.Wood.BlackWood(this);
+    	BlueWood = new net.owexz.PaintedStone.Wood.BlueWood(this);
+    	BrownWood = new net.owexz.PaintedStone.Wood.BrownWood(this);
+    	CyanWood = new net.owexz.PaintedStone.Wood.CyanWood(this);
+    	GreenWood = new net.owexz.PaintedStone.Wood.GreenWood(this);
+    	LightBlueWood = new net.owexz.PaintedStone.Wood.LightBlueWood(this);
+    	LimeWood = new net.owexz.PaintedStone.Wood.LimeWood(this);
+    	MagentaWood = new net.owexz.PaintedStone.Wood.MagentaWood(this);
+    	OrangeWood = new net.owexz.PaintedStone.Wood.OrangeWood(this);
+    	PinkWood = new net.owexz.PaintedStone.Wood.PinkWood(this);
+    	PurpleWood = new net.owexz.PaintedStone.Wood.PurpleWood(this);
+    	RedWood = new net.owexz.PaintedStone.Wood.RedWood(this);
+    	WhiteWood = new net.owexz.PaintedStone.Wood.WhiteWood(this);
+    	YellowWood = new net.owexz.PaintedStone.Wood.YellowWood(this);
         SpoutShapedRecipe recipe = new SpoutShapedRecipe(new SpoutItemStack(BlackStoneBlock, 2));
         recipe.shape("   ", "ABA", "   ");
         recipe.setIngredient('A', MaterialData.stone);
@@ -330,6 +410,76 @@ public class PaintedStone extends JavaPlugin
         recipe41.setIngredient('A', MaterialData.glowstoneBlock);
         recipe41.setIngredient('B', MaterialData.dandelionYellow);
         SpoutManager.getMaterialManager().registerSpoutRecipe(recipe41);
+        SpoutShapedRecipe recipe42 = new SpoutShapedRecipe(new SpoutItemStack(BlackWood, 2));
+        recipe42.shape("   ", "ABA", "   ");
+        recipe42.setIngredient('A', MaterialData.wood);
+        recipe42.setIngredient('B', MaterialData.inkSac);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe42);
+        SpoutShapedRecipe recipe43 = new SpoutShapedRecipe(new SpoutItemStack(BlueWood, 2));
+        recipe43.shape("   ", "ABA", "   ");
+        recipe43.setIngredient('A', MaterialData.wood);
+        recipe43.setIngredient('B', MaterialData.lapisLazuli);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe43);
+        SpoutShapedRecipe recipe44 = new SpoutShapedRecipe(new SpoutItemStack(BrownWood, 2));
+        recipe44.shape("   ", "ABA", "   ");
+        recipe44.setIngredient('A', MaterialData.wood);
+        recipe44.setIngredient('B', MaterialData.cocoaBeans);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe44);
+        SpoutShapedRecipe recipe45 = new SpoutShapedRecipe(new SpoutItemStack(CyanWood, 2));
+        recipe45.shape("   ", "ABA", "   ");
+        recipe45.setIngredient('A', MaterialData.wood);
+        recipe45.setIngredient('B', MaterialData.cyanDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe45);
+        SpoutShapedRecipe recipe46 = new SpoutShapedRecipe(new SpoutItemStack(GreenWood, 2));
+        recipe46.shape("   ", "ABA", "   ");
+        recipe46.setIngredient('A', MaterialData.wood);
+        recipe46.setIngredient('B', MaterialData.cactusGreen);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe46);
+        SpoutShapedRecipe recipe47 = new SpoutShapedRecipe(new SpoutItemStack(LightBlueWood, 2));
+        recipe47.shape("   ", "ABA", "   ");
+        recipe47.setIngredient('A', MaterialData.wood);
+        recipe47.setIngredient('B', MaterialData.lightBlueDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe47);
+        SpoutShapedRecipe recipe48 = new SpoutShapedRecipe(new SpoutItemStack(LimeWood, 2));
+        recipe48.shape("   ", "ABA", "   ");
+        recipe48.setIngredient('A', MaterialData.wood);
+        recipe48.setIngredient('B', MaterialData.limeDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe48);
+        SpoutShapedRecipe recipe49 = new SpoutShapedRecipe(new SpoutItemStack(MagentaWood, 2));
+        recipe49.shape("   ", "ABA", "   ");
+        recipe49.setIngredient('A', MaterialData.wood);
+        recipe49.setIngredient('B', MaterialData.magentaDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe49);
+        SpoutShapedRecipe recipe50 = new SpoutShapedRecipe(new SpoutItemStack(OrangeWood, 2));
+        recipe50.shape("   ", "ABA", "   ");
+        recipe50.setIngredient('A', MaterialData.wood);
+        recipe50.setIngredient('B', MaterialData.orangeDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe50);
+        SpoutShapedRecipe recipe51 = new SpoutShapedRecipe(new SpoutItemStack(PinkWood, 2));
+        recipe51.shape("   ", "ABA", "   ");
+        recipe51.setIngredient('A', MaterialData.wood);
+        recipe51.setIngredient('B', MaterialData.pinkDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe51);
+        SpoutShapedRecipe recipe52 = new SpoutShapedRecipe(new SpoutItemStack(PurpleWood, 2));
+        recipe52.shape("   ", "ABA", "   ");
+        recipe52.setIngredient('A', MaterialData.wood);
+        recipe52.setIngredient('B', MaterialData.purpleDye);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe52);
+        SpoutShapedRecipe recipe53 = new SpoutShapedRecipe(new SpoutItemStack(RedWood, 2));
+        recipe53.shape("   ", "ABA", "   ");
+        recipe53.setIngredient('A', MaterialData.wood);
+        recipe53.setIngredient('B', MaterialData.roseRed);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe53);
+        SpoutShapedRecipe recipe54 = new SpoutShapedRecipe(new SpoutItemStack(WhiteWood, 2));
+        recipe54.shape("   ", "ABA", "   ");
+        recipe54.setIngredient('A', MaterialData.wood);
+        recipe54.setIngredient('B', MaterialData.boneMeal);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe54);
+        SpoutShapedRecipe recipe55 = new SpoutShapedRecipe(new SpoutItemStack(YellowWood, 2));
+        recipe55.shape("   ", "ABA", "   ");
+        recipe55.setIngredient('A', MaterialData.wood);
+        recipe55.setIngredient('B', MaterialData.dandelionYellow);
+        SpoutManager.getMaterialManager().registerSpoutRecipe(recipe55);
         log.info("PaintedStone by Owexz (Owexz.net) Enabled");
     }
  
@@ -380,6 +530,20 @@ public class PaintedStone extends JavaPlugin
     CustomBlock RedGlowstone;
     CustomBlock WhiteGlowstone;
     CustomBlock YellowGlowstone;
+    CustomBlock BlackWood;
+    CustomBlock BlueWood;
+    CustomBlock BrownWood;
+    CustomBlock CyanWood;
+    CustomBlock GreenWood;
+    CustomBlock LightBlueWood;
+    CustomBlock LimeWood;
+    CustomBlock MagentaWood;
+    CustomBlock OrangeWood;
+    CustomBlock PinkWood;
+    CustomBlock PurpleWood;
+    CustomBlock RedWood;
+    CustomBlock WhiteWood;
+    CustomBlock YellowWood;
     Logger log;
     public Texture BlackStoneBlockTexture;
     Texture BlueStoneBlockTexture;
@@ -423,6 +587,19 @@ public class PaintedStone extends JavaPlugin
     Texture RedGlowstoneTexture;
     Texture WhiteGlowstoneTexture;
     Texture YellowGlowstoneTexture;
-    
+    Texture BlackWoodTexture;
+    Texture BlueWoodTexture;
+    Texture BrownWoodTexture;
+    Texture CyanWoodTexture;
+    Texture GreenWoodTexture;
+    Texture LightBlueWoodTexture;
+    Texture LimeWoodTexture;
+    Texture MagentaWoodTexture;
+    Texture OrangeWoodTexture;
+    Texture PinkWoodTexture;
+    Texture PurpleWoodTexture;
+    Texture RedWoodTexture;
+    Texture WhiteWoodTexture;
+    Texture YellowWoodTexture;
     
 }
