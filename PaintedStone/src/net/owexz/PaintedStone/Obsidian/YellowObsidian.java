@@ -9,7 +9,7 @@ public class YellowObsidian extends GenericCubeCustomBlock
  
     public YellowObsidian(Plugin plugin)
     {
-        super(plugin, "Yellow Obsidian", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6907025.png", 16));
+        super(plugin, "Yellow Obsidian", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/93090.png", 16));
     }
     public int getBlockId() {
     	return 49;

@@ -9,7 +9,7 @@ public class OrangeObsidian extends GenericCubeCustomBlock
  
     public OrangeObsidian(Plugin plugin)
     {
-        super(plugin, "Orange Obsidian", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/591872.png", 16));
+        super(plugin, "Orange Obsidian", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/4856300.png", 16));
     }
     public int getBlockId() {
     	return 49;

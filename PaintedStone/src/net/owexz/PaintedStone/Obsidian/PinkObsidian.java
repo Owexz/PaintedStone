@@ -9,7 +9,7 @@ public class PinkObsidian extends GenericCubeCustomBlock
  
     public PinkObsidian(Plugin plugin)
     {
-        super(plugin, "Pink Obsidian", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/3670943.png", 16));
+        super(plugin, "Pink Obsidian", new GenericCubeBlockDesign(plugin, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/7408907.png", 16));
     }
     public int getBlockId() {
     	return 49;
