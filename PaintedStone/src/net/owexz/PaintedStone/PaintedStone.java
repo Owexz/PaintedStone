@@ -71,10 +71,22 @@ import org.getspout.spoutapi.material.MaterialData;
  
 public class PaintedStone extends JavaPlugin
 {
- 
-    public PaintedStone()
+	
+    public void onEnable()
     {
-        log = Logger.getLogger("Minecraft");
+    	log = Logger.getLogger("Minecraft");
+    	setupTextures();
+    	setupBlocks();
+    	setupRecipes();
+        log.info("PaintedStone by Owexz (Owexz.net) Enabled");
+    }
+ 
+    public void onDisable()
+    {
+        log.info("PaintedStone by Owexz (Owexz.net) disabled.");
+    }
+    
+    public void setupTextures() {
         /* Stone Textures
          */
         BlackStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5578079.png", 64, 16, 16);
@@ -155,11 +167,9 @@ public class PaintedStone extends JavaPlugin
         RedObsidianTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/2223525.png", 64, 16, 16);
         WhiteObsidianTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6540375.png", 64, 16, 16);
         YellowObsidianTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6907025.png", 64, 16, 16);
-        
     }
- 
-    public void onEnable()
-    {
+    
+    public void setupBlocks() {
     	BlackStoneBlock = new BlackStoneBlock(this);
     	BlueStoneBlock = new BlueStoneBlock(this);
     	BrownStoneBlock = new BrownStoneBlock(this);
@@ -216,6 +226,24 @@ public class PaintedStone extends JavaPlugin
     	RedWood = new net.owexz.PaintedStone.Wood.RedWood(this);
     	WhiteWood = new net.owexz.PaintedStone.Wood.WhiteWood(this);
     	YellowWood = new net.owexz.PaintedStone.Wood.YellowWood(this);
+    	
+    	BlackObsidian = new net.owexz.PaintedStone.Obsidian.BlackObsidian(this);
+    	BlueObsidian = new net.owexz.PaintedStone.Obsidian.BlueObsidian(this);
+    	BrownObsidian = new net.owexz.PaintedStone.Obsidian.BrownObsidian(this);
+    	CyanObsidian = new net.owexz.PaintedStone.Obsidian.CyanObsidian(this);
+    	GreenObsidian = new net.owexz.PaintedStone.Obsidian.GreenObsidian(this);
+    	LightBlueObsidian = new net.owexz.PaintedStone.Obsidian.LightBlueObsidian(this);
+    	LimeObsidian = new net.owexz.PaintedStone.Obsidian.LimeObsidian(this);
+    	MagentaObsidian = new net.owexz.PaintedStone.Obsidian.MagentaObsidian(this);
+    	OrangeObsidian = new net.owexz.PaintedStone.Obsidian.OrangeObsidian(this);
+    	PinkObsidian = new net.owexz.PaintedStone.Obsidian.PinkObsidian(this);
+    	PurpleObsidian = new net.owexz.PaintedStone.Obsidian.PurpleObsidian(this);
+    	RedObsidian = new net.owexz.PaintedStone.Obsidian.RedObsidian(this);
+    	WhiteObsidian = new net.owexz.PaintedStone.Obsidian.WhiteObsidian(this);
+    	YellowObsidian = new net.owexz.PaintedStone.Obsidian.YellowObsidian(this);
+    }
+    
+    public void setupRecipes() {
         SpoutShapedRecipe recipe = new SpoutShapedRecipe(new SpoutItemStack(BlackStoneBlock, 2));
         recipe.shape("ABA");
         recipe.setIngredient('A', MaterialData.stone);
@@ -566,12 +594,6 @@ public class PaintedStone extends JavaPlugin
         recipe69.setIngredient('A', MaterialData.obsidian);
         recipe69.setIngredient('B', MaterialData.dandelionYellow);
         SpoutManager.getMaterialManager().registerSpoutRecipe(recipe69);
-        log.info("PaintedStone by Owexz (Owexz.net) Enabled");
-    }
- 
-    public void onDisable()
-    {
-        log.info("PaintedStone by Owexz (Owexz.net) disabled.");
     }
  
     public static CustomBlock BlackStoneBlock;
