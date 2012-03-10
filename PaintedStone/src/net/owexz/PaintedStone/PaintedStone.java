@@ -71,10 +71,22 @@ import org.getspout.spoutapi.material.MaterialData;
  
 public class PaintedStone extends JavaPlugin
 {
- 
-    public PaintedStone()
+    
+    public void onEnable()
     {
         log = Logger.getLogger("Minecraft");
+        setupTextures();
+        setupBlocks();
+        setupRecipes();
+        log.info("PaintedStone by Owexz (Owexz.net) Enabled");
+    }
+ 
+    public void onDisable()
+    {
+        log.info("PaintedStone by Owexz (Owexz.net) disabled.");
+    }
+    
+    public void setupTextures() {
         /* Stone Textures
          */
         BlackStoneBlockTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/5578079.png", 64, 16, 16);
@@ -155,67 +167,83 @@ public class PaintedStone extends JavaPlugin
         RedObsidianTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/2223525.png", 64, 16, 16);
         WhiteObsidianTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6540375.png", 64, 16, 16);
         YellowObsidianTexture = new Texture(this, "http://www.jamoscraft.owexz.net/uploads/1/4/8/5/1485487/6907025.png", 64, 16, 16);
-        
     }
- 
-    public void onEnable()
-    {
-    	BlackStoneBlock = new BlackStoneBlock(this);
-    	BlueStoneBlock = new BlueStoneBlock(this);
-    	BrownStoneBlock = new BrownStoneBlock(this);
-    	CyanStoneBlock = new CyanStoneBlock(this);
-    	GreenStoneBlock = new GreenStoneBlock(this);
-    	LightBlueStoneBlock = new LightBlueStoneBlock(this);
-    	LimeStoneBlock = new LimeStoneBlock(this);
-    	MagentaStoneBlock = new MagentaStoneBlock(this);
-    	OrangeStoneBlock = new OrangeStoneBlock(this);
-    	PinkStoneBlock = new PinkStoneBlock(this);
-    	PurpleStoneBlock = new PurpleStoneBlock(this);
-    	RedStoneBlock = new RedStoneBlock(this);
-    	WhiteStoneBlock = new WhiteStoneBlock(this);
-    	YellowStoneBlock = new YellowStoneBlock(this);
-    	BlackCobbleStoneBlock = new BlackCobbleStoneBlock(this);
-    	BlueCobbleStoneBlock = new BlueCobbleStoneBlock(this);
-    	BrownCobbleStoneBlock = new BrownCobbleStoneBlock(this);
-    	CyanCobbleStoneBlock = new CyanCobbleStoneBlock(this);
-    	GreenCobbleStoneBlock = new GreenCobbleStoneBlock(this);
-    	LightBlueCobbleStoneBlock = new LightBlueCobbleStoneBlock(this);
-    	LimeCobbleStoneBlock = new LimeCobbleStoneBlock(this);
-    	MagentaCobbleStoneBlock = new MagentaCobbleStoneBlock(this);
-    	OrangeCobbleStoneBlock = new OrangeCobbleStoneBlock(this);
-    	PinkCobbleStoneBlock = new PinkCobbleStoneBlock(this);
-    	PurpleCobbleStoneBlock = new PurpleCobbleStoneBlock(this);
-    	RedCobbleStoneBlock = new RedCobbleStoneBlock(this);
-    	WhiteCobbleStoneBlock = new WhiteCobbleStoneBlock(this);
-    	YellowCobbleStoneBlock = new YellowCobbleStoneBlock(this);
-    	BlackGlowstone = new BlackGlowstone(this);
-    	BlueGlowstone = new BlueGlowstone(this);
-    	BrownGlowstone = new BrownGlowstone(this);
-    	CyanGlowstone = new CyanGlowstone(this);
-    	GreenGlowstone = new GreenGlowstone(this);
-    	LightBlueGlowstone = new LightBlueGlowstone(this);
-    	LimeGlowstone = new LimeGlowstone(this);
-    	MagentaGlowstone = new MagentaGlowstone(this);
-    	OrangeGlowstone = new OrangeGlowstone(this);
-    	PinkGlowstone = new PinkGlowstone(this);
-    	PurpleGlowstone = new PurpleGlowstone(this);
-    	RedGlowstone = new RedGlowstone(this);
-    	WhiteGlowstone = new WhiteGlowstone(this);
-    	YellowGlowstone = new YellowGlowstone(this);
-    	BlackWood = new net.owexz.PaintedStone.Wood.BlackWood(this);
-    	BlueWood = new net.owexz.PaintedStone.Wood.BlueWood(this);
-    	BrownWood = new net.owexz.PaintedStone.Wood.BrownWood(this);
-    	CyanWood = new net.owexz.PaintedStone.Wood.CyanWood(this);
-    	GreenWood = new net.owexz.PaintedStone.Wood.GreenWood(this);
-    	LightBlueWood = new net.owexz.PaintedStone.Wood.LightBlueWood(this);
-    	LimeWood = new net.owexz.PaintedStone.Wood.LimeWood(this);
-    	MagentaWood = new net.owexz.PaintedStone.Wood.MagentaWood(this);
-    	OrangeWood = new net.owexz.PaintedStone.Wood.OrangeWood(this);
-    	PinkWood = new net.owexz.PaintedStone.Wood.PinkWood(this);
-    	PurpleWood = new net.owexz.PaintedStone.Wood.PurpleWood(this);
-    	RedWood = new net.owexz.PaintedStone.Wood.RedWood(this);
-    	WhiteWood = new net.owexz.PaintedStone.Wood.WhiteWood(this);
-    	YellowWood = new net.owexz.PaintedStone.Wood.YellowWood(this);
+    
+    public void setupBlocks() {
+        BlackStoneBlock = new BlackStoneBlock(this);
+        BlueStoneBlock = new BlueStoneBlock(this);
+        BrownStoneBlock = new BrownStoneBlock(this);
+        CyanStoneBlock = new CyanStoneBlock(this);
+        GreenStoneBlock = new GreenStoneBlock(this);
+        LightBlueStoneBlock = new LightBlueStoneBlock(this);
+        LimeStoneBlock = new LimeStoneBlock(this);
+        MagentaStoneBlock = new MagentaStoneBlock(this);
+        OrangeStoneBlock = new OrangeStoneBlock(this);
+        PinkStoneBlock = new PinkStoneBlock(this);
+        PurpleStoneBlock = new PurpleStoneBlock(this);
+        RedStoneBlock = new RedStoneBlock(this);
+        WhiteStoneBlock = new WhiteStoneBlock(this);
+        YellowStoneBlock = new YellowStoneBlock(this);
+        BlackCobbleStoneBlock = new BlackCobbleStoneBlock(this);
+        BlueCobbleStoneBlock = new BlueCobbleStoneBlock(this);
+        BrownCobbleStoneBlock = new BrownCobbleStoneBlock(this);
+        CyanCobbleStoneBlock = new CyanCobbleStoneBlock(this);
+        GreenCobbleStoneBlock = new GreenCobbleStoneBlock(this);
+        LightBlueCobbleStoneBlock = new LightBlueCobbleStoneBlock(this);
+        LimeCobbleStoneBlock = new LimeCobbleStoneBlock(this);
+        MagentaCobbleStoneBlock = new MagentaCobbleStoneBlock(this);
+        OrangeCobbleStoneBlock = new OrangeCobbleStoneBlock(this);
+        PinkCobbleStoneBlock = new PinkCobbleStoneBlock(this);
+        PurpleCobbleStoneBlock = new PurpleCobbleStoneBlock(this);
+        RedCobbleStoneBlock = new RedCobbleStoneBlock(this);
+        WhiteCobbleStoneBlock = new WhiteCobbleStoneBlock(this);
+        YellowCobbleStoneBlock = new YellowCobbleStoneBlock(this);
+        BlackGlowstone = new BlackGlowstone(this);
+        BlueGlowstone = new BlueGlowstone(this);
+        BrownGlowstone = new BrownGlowstone(this);
+        CyanGlowstone = new CyanGlowstone(this);
+        GreenGlowstone = new GreenGlowstone(this);
+        LightBlueGlowstone = new LightBlueGlowstone(this);
+        LimeGlowstone = new LimeGlowstone(this);
+        MagentaGlowstone = new MagentaGlowstone(this);
+        OrangeGlowstone = new OrangeGlowstone(this);
+        PinkGlowstone = new PinkGlowstone(this);
+        PurpleGlowstone = new PurpleGlowstone(this);
+        RedGlowstone = new RedGlowstone(this);
+        WhiteGlowstone = new WhiteGlowstone(this);
+        YellowGlowstone = new YellowGlowstone(this);
+        BlackWood = new net.owexz.PaintedStone.Wood.BlackWood(this);
+        BlueWood = new net.owexz.PaintedStone.Wood.BlueWood(this);
+        BrownWood = new net.owexz.PaintedStone.Wood.BrownWood(this);
+        CyanWood = new net.owexz.PaintedStone.Wood.CyanWood(this);
+        GreenWood = new net.owexz.PaintedStone.Wood.GreenWood(this);
+        LightBlueWood = new net.owexz.PaintedStone.Wood.LightBlueWood(this);
+        LimeWood = new net.owexz.PaintedStone.Wood.LimeWood(this);
+        MagentaWood = new net.owexz.PaintedStone.Wood.MagentaWood(this);
+        OrangeWood = new net.owexz.PaintedStone.Wood.OrangeWood(this);
+        PinkWood = new net.owexz.PaintedStone.Wood.PinkWood(this);
+        PurpleWood = new net.owexz.PaintedStone.Wood.PurpleWood(this);
+        RedWood = new net.owexz.PaintedStone.Wood.RedWood(this);
+        WhiteWood = new net.owexz.PaintedStone.Wood.WhiteWood(this);
+        YellowWood = new net.owexz.PaintedStone.Wood.YellowWood(this);
+        
+        BlackObsidian = new net.owexz.PaintedStone.Obsidian.BlackObsidian(this);
+        BlueObsidian = new net.owexz.PaintedStone.Obsidian.BlueObsidian(this);
+        BrownObsidian = new net.owexz.PaintedStone.Obsidian.BrownObsidian(this);
+        CyanObsidian = new net.owexz.PaintedStone.Obsidian.CyanObsidian(this);
+        GreenObsidian = new net.owexz.PaintedStone.Obsidian.GreenObsidian(this);
+        LightBlueObsidian = new net.owexz.PaintedStone.Obsidian.LightBlueObsidian(this);
+        LimeObsidian = new net.owexz.PaintedStone.Obsidian.LimeObsidian(this);
+        MagentaObsidian = new net.owexz.PaintedStone.Obsidian.MagentaObsidian(this);
+        OrangeObsidian = new net.owexz.PaintedStone.Obsidian.OrangeObsidian(this);
+        PinkObsidian = new net.owexz.PaintedStone.Obsidian.PinkObsidian(this);
+        PurpleObsidian = new net.owexz.PaintedStone.Obsidian.PurpleObsidian(this);
+        RedObsidian = new net.owexz.PaintedStone.Obsidian.RedObsidian(this);
+        WhiteObsidian = new net.owexz.PaintedStone.Obsidian.WhiteObsidian(this);
+        YellowObsidian = new net.owexz.PaintedStone.Obsidian.YellowObsidian(this);
+    }
+    
+    public void setupRecipes() {
         SpoutShapedRecipe recipe = new SpoutShapedRecipe(new SpoutItemStack(BlackStoneBlock, 2));
         recipe.shape("ABA");
         recipe.setIngredient('A', MaterialData.stone);
@@ -566,12 +594,6 @@ public class PaintedStone extends JavaPlugin
         recipe69.setIngredient('A', MaterialData.obsidian);
         recipe69.setIngredient('B', MaterialData.dandelionYellow);
         SpoutManager.getMaterialManager().registerSpoutRecipe(recipe69);
-        log.info("PaintedStone by Owexz (Owexz.net) Enabled");
-    }
- 
-    public void onDisable()
-    {
-        log.info("PaintedStone by Owexz (Owexz.net) disabled.");
     }
  
     public static CustomBlock BlackStoneBlock;
