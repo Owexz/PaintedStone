@@ -3,4 +3,4 @@ version:  1.2
 author: Owexz
 description: Coloured Stone!
 main: net.owexz.PaintedStone.PaintedStone
-depend: [SpoutPlugin]
+depend: [Spout]
